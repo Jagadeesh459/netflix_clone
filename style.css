@@ -13,11 +13,10 @@ body {
     height: 95vh;
     width: 100vw;
     background-image: url(./assets/main_image.jpg);
-    background-size: max(1500px, 100vw);
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
-
 }
 
 .box {
@@ -39,6 +38,7 @@ nav {
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
+
 }
 
 nav div {
@@ -145,10 +145,12 @@ option {
 }
 
 @media (max-width: 550px) {
+
     .text> :nth-child(2),
     :nth-child(3) {
         font-size: 18px;
     }
+
     .text> :first-child {
         font-size: 28px;
         font-weight: bold;
@@ -169,6 +171,7 @@ option {
     }
 
 }
+
 
 .line {
     height: 7px;
@@ -274,7 +277,7 @@ option {
 
 .boxes {
     height: 35px;
-    width: min(800px, 70%);
+    width: 70%;
     font-size: 26px;
     transition: hover 0.3s ease-in-out;
     display: flex;
@@ -312,19 +315,23 @@ option {
 .questions :nth-child(9) {
     padding: 50px;
 }
+
 @media (max-width: 930px) {
     .questions> :first-child {
         font-size: 40px;
     }
-    .boxes{
+
+    .boxes {
         font-size: 20px;
     }
 }
+
 @media (max-width: 550px) {
     .questions> :first-child {
         font-size: 26px;
     }
-    .boxes{
+
+    .boxes {
         font-size: 18px;
     }
 }
@@ -350,6 +357,13 @@ footer span {
     margin-right: 20%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 550px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 a {
