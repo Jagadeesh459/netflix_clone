@@ -263,30 +263,28 @@ option {
     .second,
     .third,
     .fourth {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        gap: 0px;
+        flex-wrap: wrap;
         text-align: center;
     }
 
     .sec_text {
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     .sec_text :first-child {
-        font-size: 40px;
+        font-size: 26px;
         font-weight: bold;
     }
 
     .sec_text :nth-child(2) {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
     }
 
     .sec_img img {
-        width: 60vw;
+        width: 100vw;
         position: relative;
         z-index: 1;
     }
